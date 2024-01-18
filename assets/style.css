@@ -14,7 +14,7 @@
 }
 .section-description{
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -67,7 +67,7 @@
     color: #FFF;
 }
 .banner > h2 {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 800;
 }
 .input-section {
@@ -110,3 +110,33 @@
     background: #FFF;
     border: 0;
 }
+
+/* Media Query */
+/* Mobile devices */
+@media screen and (max-width:600px){
+
+    .nav-main, .list-items ul{
+        flex-direction: column;
+    }
+    .list-items ul{
+        visibility: hidden;
+    }
+    .banner{
+        margin-top: 0;
+        padding: 0 10px 0 10px;
+        background-position: center;
+    }
+    .banner > h2{
+        font-size: 2.2rem;
+    }
+    .input-section{
+        flex-wrap: wrap;
+        transform: translateY(-30px);
+        gap: 10px;
+    }
+}
+
+/*  */
+/* @media screen and (min-width:992px){
+    
+} */
