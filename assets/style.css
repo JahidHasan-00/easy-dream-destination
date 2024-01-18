@@ -5,6 +5,10 @@
     padding: 0;
     font-family: 'Mulish', sans-serif;
 }
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
 .section-title{
     color: #131318;
     font-weight: 800;
@@ -14,6 +18,7 @@
 }
 .section-description{
     /* text-align: center; */
+    color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
     font-weight: 400;
 }
@@ -32,7 +37,11 @@
     padding: 14px 34px;
     border: 0;
 }
-/* Navbar style */
+
+/*****
+ Navbar style
+ *****/
+
 .header{
     padding: 52px 127px 0 135px;
 }
@@ -62,7 +71,7 @@
 }
 .list-items li {
     list-style: none;
-    margin-right: 54px;
+    margin-left: 54px;
 }
 .list-items li a{
     text-decoration: none;
@@ -72,8 +81,6 @@
 .banner{
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("./images/Group-13-1-1.png");
     border-radius: 16px;
-    /* height: 500px; */
-    max-width: 1196px;
     background-repeat: no-repeat;
     text-align: center;
     padding: 106px 0 106px 0;
@@ -97,6 +104,7 @@
 }    
 .banner p {
     margin: 24px 0 48px 0;
+    color: #FFF;
 }
 
 .input-section p {
@@ -139,12 +147,72 @@
 }
 .tour-description{
     margin: 24px 0 32px 0;
+    color: #5A5A5D;
 }
 .list-content{
     padding-left: 25px;
 }
 .list-content li{
     margin-bottom: 16px ;
+}
+
+/* Choose Your Destination */
+section.destination-main.container {
+    text-align: center;
+    margin-top: 100px;
+}
+.destination-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.destination-img{
+    width: 573px;
+    height: 300px;
+    background-size: cover;
+    object-fit: cover;
+    color: #FFF;
+}
+.srilanka, .america, .kashmir{
+    height: 286px;
+}
+.maldives{
+    background-image: url("./images/Rectangle-5.png");
+    
+}
+.indonesia{
+    background-image: url("./images/Rectangle-8.png");
+}
+.srilanka{
+    background-image: url("./images/Rectangle-6.png");
+    width: 374px;
+}
+.america{
+    background-image: url("./images/Rectangle-7.png");
+    width: 474px;
+}
+.kashmir{
+    background-image: url("./images/Rectangle-9.png");
+    width: 274px;
+}
+.bangladesh{
+    background-image: url("./images/Rectangle-11.png");
+    width: 473px;
+}
+.bandarban{
+    background-image: url("./images/Rectangle-10.png");
+    width: 673px;
+}
+.indo-place{
+    transform: translateY(130px);
+}
+.destination-img > div{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
+.destination-main > p{
+    margin: 24px 0 48px 0;
 }
 /* Media Query */
 /* Mobile devices */
@@ -175,8 +243,13 @@
     .tour-img img{
         width: 100%;
     }
+    .destination-img{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 573px;
+        height: 300px;
+    }
 }
-
 /*  */
 /* @media screen and (min-width:992px){
     
