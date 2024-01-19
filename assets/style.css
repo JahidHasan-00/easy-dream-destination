@@ -9,10 +9,6 @@
     max-width: 1170px;
     margin: 0 auto;
 }
-.section-title{
-    color: #131318;
-    font-weight: 800;
-}
 .dream{
     color: #FF5400;
 }
@@ -24,7 +20,7 @@
 }
 .section-title{
     color: #131318;
-    font-size: 40px;
+    font-size: 2.3rem;
     font-weight: 800;
 
 }
@@ -102,6 +98,13 @@
     transform: translateX(220px);
     max-width: 768px;
     padding: 16px;
+}
+.input-area{
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 14px;
 }    
 .banner p {
     margin: 24px 0 48px 0;
@@ -129,8 +132,6 @@
 .input-section input{
     height: 52px;
     width: 174px;
-    border-radius: 8px;
-    background: #FFF;
     border: 0;
 }
 
@@ -233,8 +234,9 @@ Why Choose Us style
 .cards-main{
     display: flex;
     gap: 24px;
+    text-align: left;
 }
-.cards-main .cards h4 , .card-price >h4{
+.cards-main .cards h4 , .card-price > h4{
     margin-top: 32px;
     margin-bottom: 16px;
 }
@@ -257,19 +259,86 @@ Why Choose Us style
 .card-price{
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
-    transform: translate(40%, 24px);
+    transform: translateX(40%);
+    text-align: left;
+    margin-top: 24px;
 }
 
 .why-choose-us-main > p{
     transform: translateX(40%);
 }
+
+
 /* News letter styles */
-
-
-
-
-
-
+.newsletter-section{
+    display: flex;
+    margin-top: 100px;
+    gap: 24px;
+}
+.form-main{
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    width: 40%;
+    padding: 20px;
+}
+.form-main > h4{
+    font-size: 1.5rem;
+}
+.form-main form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.form-main input{
+     height: 52px;
+     border: 0;
+     border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+.form-main input::placeholder {
+    padding-left: 20px;
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+}
+.form-content {
+    margin: 16px 0 24px 0;
+    width: 80%;
+}
+.form-main form{
+    padding-top: 24px;
+    border: 1px solid rgba(19, 19, 24, 0.10);
+    border-left: 0;
+    border-right: 0;
+}
+.coupon-link-main{
+    background-image: url("./images/Rectangle-8-1.png");
+    width: 672px;
+    border-radius: 16px;
+    background-size: cover;
+    height: 422px;
+    position: relative;
+}
+.coupon-link{
+    width: 324px;
+    border-radius: 16px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    padding: 20px 10px;
+    transform: rotate(-19.628deg);
+}
+.coupon-link-main .coupon-link > p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.coupon-link-main .coupon-link > h3{
+    font-size: 2rem;
+    font-weight: 800;
+}
 /* Media Query */
 /* Mobile devices */
 @media screen and (max-width:600px){
@@ -320,6 +389,23 @@ Why Choose Us style
     }
     .cards{
         width: 80%;
+    }
+    .newsletter-section{
+        flex-direction: column;
+    }
+
+    .coupon-link-main{
+        width: 100%;
+        background-position-x: -155px;
+        
+    }
+    .form-main{
+        width: 90%;
+    }
+    .coupon-link{
+        left: 20%;
+        top: 63%;
+        width: 70%;
     }
 
 }
