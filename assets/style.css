@@ -50,7 +50,7 @@
     margin-right: 16px;
 }
 .nav-logo h3{
-    font-size: 36px;
+    font-size: 2.1rem;
 }
 #home{
     color: #FF5400;
@@ -91,21 +91,28 @@
 .input-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     gap: 24px;
-    transform: translateX(220px);
-    max-width: 768px;
+    transform: translateX(175px);
+    max-width: 70%;
     padding: 16px;
 }
 .input-area{
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #FFF;
     border-radius: 8px;
     padding: 14px;
-}    
+    width: 174px;
+    height: 52p;
+} 
+.search{
+    background: #FF5400;
+    gap: 8px;
+}  
 .banner p {
     margin: 24px 0 48px 0;
     color: #FFF;
@@ -126,12 +133,11 @@
 .input-section .button{
     font-size: 16px;
     font-weight: 700;
-    background: #FF5400;
     color: #FFF;
+    background: #FF5400;
 }
 .input-section input{
-    height: 52px;
-    width: 174px;
+    border-radius: 8px;
     border: 0;
 }
 
@@ -339,6 +345,31 @@ Why Choose Us style
     font-size: 2rem;
     font-weight: 800;
 }
+
+/****Footer Section Style****/
+.footer-main{
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 100px;
+}
+footer{
+    text-align: center;
+    padding: 110px 0 110px 0;
+}
+.footer-content{
+    margin: 15px 0 33px 0;
+    width: 769px;
+    display: inline-block;
+}
+.social-icons{
+    padding-bottom: 73px;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+}
+.copy-right{
+    margin-top: 50px;
+}
+
+
+
 /* Media Query */
 /* Mobile devices */
 @media screen and (max-width:600px){
@@ -362,7 +393,7 @@ Why Choose Us style
     }
     .input-section{
         flex-wrap: wrap;
-        transform: translateY(-30px);
+        transform: translate(35px,-37px);
         gap: 10px;
     }
     .tour-img img{
@@ -392,22 +423,26 @@ Why Choose Us style
     }
     .newsletter-section{
         flex-direction: column;
+        padding: 0 10px 0 10px;
     }
 
     .coupon-link-main{
         width: 100%;
         background-position-x: -155px;
-        
+        background-repeat: no-repeat;
+        height: 460px;
     }
     .form-main{
         width: 90%;
     }
     .coupon-link{
-        left: 20%;
-        top: 63%;
+        left: 22%;
+        top: 60%;
         width: 70%;
     }
-
+    .footer-content{
+        width: 90%;
+    }
 }
 /*  */
 /* @media screen and (min-width:992px){
